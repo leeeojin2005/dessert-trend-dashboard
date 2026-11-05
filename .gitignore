@@ -224,3 +224,6 @@ raw/*.xlsx
 raw/*.json
 api_key*
 *.env
+.idea/
+.venv/
+venv/
