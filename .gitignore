@@ -225,6 +225,11 @@ raw/*.json
 api_key*
 *.env
 .idea/
-.venv/
 venv/
 raw/general_parts/
+# 작은 데이터는 올리기 허용
+!raw/search_*.json
+!raw/kosis_*.csv
+
+# 네이버 API 키도 올리지 않기
+naver_key*
