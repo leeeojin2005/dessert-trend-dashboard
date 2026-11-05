@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# 원본 데이터, API 키 (올리지 않기)
+raw/*.csv
+raw/*.xlsx
+raw/*.json
+api_key*
+*.env
