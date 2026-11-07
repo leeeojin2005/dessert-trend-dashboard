@@ -1,0 +1,31 @@
+{
+  "마라탕": {
+    "start": "2019-06",
+    "peak": "2024-02",
+    "peak_count": 1608,
+    "decline": "2025-04",
+    "now_count": 1485
+  },
+  "모찌": {
+    "start": "2026-08",
+    "peak": "2026-10",
+    "peak_count": 82,
+    "decline": null,
+    "now_count": 82,
+    "start_source": "검색량"
+  },
+  "요아정": {
+    "start": "2024-01",
+    "peak": "2026-07",
+    "peak_count": 294,
+    "decline": null,
+    "now_count": 289
+  },
+  "탕후루": {
+    "start": "2023-03",
+    "peak": "2023-11",
+    "peak_count": 741,
+    "decline": "2024-04",
+    "now_count": 64
+  }
+}
