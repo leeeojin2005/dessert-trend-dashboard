@@ -1,0 +1,536 @@
+{
+  "source": "네이버 데이터랩 검색어트렌드",
+  "keyword": "모찌",
+  "period": {
+    "start": "2016-01",
+    "end": "2026-10",
+    "unit": "월별"
+  },
+  "metric": {
+    "name": "검색 관심도 상대지수",
+    "unit": "상대지수 (최고값 100 기준)",
+    "note": "실제 검색 횟수가 아닌 네이버 데이터랩의 상대 검색 관심도 지수입니다."
+  },
+  "data": [
+    {
+      "month": "2016-01",
+      "search_index": 48.26116
+    },
+    {
+      "month": "2016-02",
+      "search_index": 46.40538
+    },
+    {
+      "month": "2016-03",
+      "search_index": 40.71345
+    },
+    {
+      "month": "2016-04",
+      "search_index": 38.55821
+    },
+    {
+      "month": "2016-05",
+      "search_index": 38.76368
+    },
+    {
+      "month": "2016-06",
+      "search_index": 39.83256
+    },
+    {
+      "month": "2016-07",
+      "search_index": 37.62049
+    },
+    {
+      "month": "2016-08",
+      "search_index": 36.69588
+    },
+    {
+      "month": "2016-09",
+      "search_index": 38.73745
+    },
+    {
+      "month": "2016-10",
+      "search_index": 39.08937
+    },
+    {
+      "month": "2016-11",
+      "search_index": 44.07746
+    },
+    {
+      "month": "2016-12",
+      "search_index": 38.2369
+    },
+    {
+      "month": "2017-01",
+      "search_index": 44.04249
+    },
+    {
+      "month": "2017-02",
+      "search_index": 39.21397
+    },
+    {
+      "month": "2017-03",
+      "search_index": 37.02594
+    },
+    {
+      "month": "2017-04",
+      "search_index": 36.95818
+    },
+    {
+      "month": "2017-05",
+      "search_index": 38.65221
+    },
+    {
+      "month": "2017-06",
+      "search_index": 37.48497
+    },
+    {
+      "month": "2017-07",
+      "search_index": 39.75606
+    },
+    {
+      "month": "2017-08",
+      "search_index": 42.65885
+    },
+    {
+      "month": "2017-09",
+      "search_index": 44.64797
+    },
+    {
+      "month": "2017-10",
+      "search_index": 50.98909
+    },
+    {
+      "month": "2017-11",
+      "search_index": 48.40105
+    },
+    {
+      "month": "2017-12",
+      "search_index": 47.47644
+    },
+    {
+      "month": "2018-01",
+      "search_index": 55.86788
+    },
+    {
+      "month": "2018-02",
+      "search_index": 46.94966
+    },
+    {
+      "month": "2018-03",
+      "search_index": 42.12988
+    },
+    {
+      "month": "2018-04",
+      "search_index": 41.56593
+    },
+    {
+      "month": "2018-05",
+      "search_index": 41.71238
+    },
+    {
+      "month": "2018-06",
+      "search_index": 36.48604
+    },
+    {
+      "month": "2018-07",
+      "search_index": 38.05329
+    },
+    {
+      "month": "2018-08",
+      "search_index": 65.78723
+    },
+    {
+      "month": "2018-09",
+      "search_index": 42.11021
+    },
+    {
+      "month": "2018-10",
+      "search_index": 41.10035
+    },
+    {
+      "month": "2018-11",
+      "search_index": 45.15071
+    },
+    {
+      "month": "2018-12",
+      "search_index": 44.23703
+    },
+    {
+      "month": "2019-01",
+      "search_index": 44.13429
+    },
+    {
+      "month": "2019-02",
+      "search_index": 40.64788
+    },
+    {
+      "month": "2019-03",
+      "search_index": 39.06533
+    },
+    {
+      "month": "2019-04",
+      "search_index": 35.05431
+    },
+    {
+      "month": "2019-05",
+      "search_index": 33.89145
+    },
+    {
+      "month": "2019-06",
+      "search_index": 32.00944
+    },
+    {
+      "month": "2019-07",
+      "search_index": 34.02915
+    },
+    {
+      "month": "2019-08",
+      "search_index": 31.00177
+    },
+    {
+      "month": "2019-09",
+      "search_index": 26.57763
+    },
+    {
+      "month": "2019-10",
+      "search_index": 26.57107
+    },
+    {
+      "month": "2019-11",
+      "search_index": 28.97549
+    },
+    {
+      "month": "2019-12",
+      "search_index": 27.54814
+    },
+    {
+      "month": "2020-01",
+      "search_index": 31.25751
+    },
+    {
+      "month": "2020-02",
+      "search_index": 29.01702
+    },
+    {
+      "month": "2020-03",
+      "search_index": 30.86624
+    },
+    {
+      "month": "2020-04",
+      "search_index": 28.02684
+    },
+    {
+      "month": "2020-05",
+      "search_index": 27.24431
+    },
+    {
+      "month": "2020-06",
+      "search_index": 22.75896
+    },
+    {
+      "month": "2020-07",
+      "search_index": 24.22566
+    },
+    {
+      "month": "2020-08",
+      "search_index": 25.84537
+    },
+    {
+      "month": "2020-09",
+      "search_index": 26.85523
+    },
+    {
+      "month": "2020-10",
+      "search_index": 26.2104
+    },
+    {
+      "month": "2020-11",
+      "search_index": 30.77007
+    },
+    {
+      "month": "2020-12",
+      "search_index": 34.76578
+    },
+    {
+      "month": "2021-01",
+      "search_index": 34.54501
+    },
+    {
+      "month": "2021-02",
+      "search_index": 26.94266
+    },
+    {
+      "month": "2021-03",
+      "search_index": 28.71319
+    },
+    {
+      "month": "2021-04",
+      "search_index": 28.1405
+    },
+    {
+      "month": "2021-05",
+      "search_index": 28.2957
+    },
+    {
+      "month": "2021-06",
+      "search_index": 24.96666
+    },
+    {
+      "month": "2021-07",
+      "search_index": 24.23878
+    },
+    {
+      "month": "2021-08",
+      "search_index": 26.24319
+    },
+    {
+      "month": "2021-09",
+      "search_index": 26.55577
+    },
+    {
+      "month": "2021-10",
+      "search_index": 25.51968
+    },
+    {
+      "month": "2021-11",
+      "search_index": 28.44433
+    },
+    {
+      "month": "2021-12",
+      "search_index": 28.35253
+    },
+    {
+      "month": "2022-01",
+      "search_index": 34.01604
+    },
+    {
+      "month": "2022-02",
+      "search_index": 26.91862
+    },
+    {
+      "month": "2022-03",
+      "search_index": 25.29891
+    },
+    {
+      "month": "2022-04",
+      "search_index": 23.69887
+    },
+    {
+      "month": "2022-05",
+      "search_index": 25.1612
+    },
+    {
+      "month": "2022-06",
+      "search_index": 24.20817
+    },
+    {
+      "month": "2022-07",
+      "search_index": 23.20487
+    },
+    {
+      "month": "2022-08",
+      "search_index": 25.88253
+    },
+    {
+      "month": "2022-09",
+      "search_index": 24.15134
+    },
+    {
+      "month": "2022-10",
+      "search_index": 27.49131
+    },
+    {
+      "month": "2022-11",
+      "search_index": 32.55371
+    },
+    {
+      "month": "2022-12",
+      "search_index": 32.44661
+    },
+    {
+      "month": "2023-01",
+      "search_index": 36.42921
+    },
+    {
+      "month": "2023-02",
+      "search_index": 29.88043
+    },
+    {
+      "month": "2023-03",
+      "search_index": 31.37992
+    },
+    {
+      "month": "2023-04",
+      "search_index": 29.9307
+    },
+    {
+      "month": "2023-05",
+      "search_index": 28.93396
+    },
+    {
+      "month": "2023-06",
+      "search_index": 24.6366
+    },
+    {
+      "month": "2023-07",
+      "search_index": 25.76668
+    },
+    {
+      "month": "2023-08",
+      "search_index": 27.97875
+    },
+    {
+      "month": "2023-09",
+      "search_index": 29.16129
+    },
+    {
+      "month": "2023-10",
+      "search_index": 33.11329
+    },
+    {
+      "month": "2023-11",
+      "search_index": 33.98762
+    },
+    {
+      "month": "2023-12",
+      "search_index": 35.55706
+    },
+    {
+      "month": "2024-01",
+      "search_index": 37.17458
+    },
+    {
+      "month": "2024-02",
+      "search_index": 36.12975
+    },
+    {
+      "month": "2024-03",
+      "search_index": 36.43576
+    },
+    {
+      "month": "2024-04",
+      "search_index": 31.74058
+    },
+    {
+      "month": "2024-05",
+      "search_index": 68.88675
+    },
+    {
+      "month": "2024-06",
+      "search_index": 28.61264
+    },
+    {
+      "month": "2024-07",
+      "search_index": 29.23779
+    },
+    {
+      "month": "2024-08",
+      "search_index": 32.35917
+    },
+    {
+      "month": "2024-09",
+      "search_index": 29.66403
+    },
+    {
+      "month": "2024-10",
+      "search_index": 32.18212
+    },
+    {
+      "month": "2024-11",
+      "search_index": 34.08599
+    },
+    {
+      "month": "2024-12",
+      "search_index": 35.92428
+    },
+    {
+      "month": "2025-01",
+      "search_index": 52.24376
+    },
+    {
+      "month": "2025-02",
+      "search_index": 43.05667
+    },
+    {
+      "month": "2025-03",
+      "search_index": 38.79647
+    },
+    {
+      "month": "2025-04",
+      "search_index": 31.53292
+    },
+    {
+      "month": "2025-05",
+      "search_index": 34.38545
+    },
+    {
+      "month": "2025-06",
+      "search_index": 30.19519
+    },
+    {
+      "month": "2025-07",
+      "search_index": 31.98758
+    },
+    {
+      "month": "2025-08",
+      "search_index": 41.37358
+    },
+    {
+      "month": "2025-09",
+      "search_index": 40.42055
+    },
+    {
+      "month": "2025-10",
+      "search_index": 47.37589
+    },
+    {
+      "month": "2025-11",
+      "search_index": 42.02277
+    },
+    {
+      "month": "2025-12",
+      "search_index": 46.62834
+    },
+    {
+      "month": "2026-01",
+      "search_index": 47.10485
+    },
+    {
+      "month": "2026-02",
+      "search_index": 36.00297
+    },
+    {
+      "month": "2026-03",
+      "search_index": 26.80495
+    },
+    {
+      "month": "2026-04",
+      "search_index": 22.87263
+    },
+    {
+      "month": "2026-05",
+      "search_index": 29.30993
+    },
+    {
+      "month": "2026-06",
+      "search_index": 24.88797
+    },
+    {
+      "month": "2026-07",
+      "search_index": 30.06404
+    },
+    {
+      "month": "2026-08",
+      "search_index": 45.42175
+    },
+    {
+      "month": "2026-09",
+      "search_index": 56.68539
+    },
+    {
+      "month": "2026-10",
+      "search_index": 100.0
+    }
+  ]
+}
