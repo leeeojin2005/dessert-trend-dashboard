@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNS 유행 디저트 카피캣 매장 분석</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">데이터 시각화 프로젝트 · 수도권 2016–2026</p>
+    <h1>SNS 유행 디저트 카피캣 매장의<br>상권 전이 및 생존 주기 분석</h1>
+    <p class="lead">탕후루 · 요아정의 패턴으로 <b>지금 뜨는 모찌의 앞날을 예측</b>합니다.<br><span class="sub-note">정착한 유행 음식의 사례로 <b>마라탕</b>을 비교군에 포함했습니다.</span></p>
+    <div class="kpis" id="kpis"></div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 1. 아이템 카드 -->
+  <section>
+    <h2>1. 유행 디저트 3종 + 비교군, 네 가지 결말</h2>
+    <p class="note">카드를 누르면 아래 그래프와 설명이 그 메뉴로 바뀝니다. 마라탕은 디저트가 아니지만, 유행이 정착한 사례와 비교하기 위해 함께 분석했습니다.</p>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <!-- 2. 인터랙티브 차트 -->
+  <section>
+    <h2>2. 유행은 어떻게 흘렀나</h2>
+    <p class="note">선 위에 마우스를 올리면 그 달의 숫자가 나옵니다. 슬라이더를 움직이면 그 시점까지만 보여줍니다.</p>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <span class="dot" id="curDot"></span>
+          <b id="curName">탕후루</b>
+          <span class="chip" id="curLabel"></span>
+        </div>
+        <div class="legend">
+          <span><i class="ln solid"></i>영업 매장 수</span>
+          <span><i class="ln dash"></i>검색 관심도</span>
+        </div>
+      </div>
+
+      <div class="chart-box">
+        <canvas id="mainChart"></canvas>
+        <div class="tip" id="tip" hidden></div>
+      </div>
+
+      <div class="slider-row">
+        <button id="playBtn" class="play">▶ 재생</button>
+        <input type="range" id="monthSlider" min="0" max="129" value="129">
+        <output id="monthOut">2026-10</output>
+      </div>
+
+      <div class="readout" id="readout"></div>
+    </div>
+
+    <!-- 유행 타임라인 -->
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <!-- 3. 그래프 갤러리 -->
+  <section>
+    <h2>3. 분석 그래프</h2>
+    <div class="controls">
+      <label for="itemSelect">메뉴</label>
+      <select id="itemSelect"></select>
+      <div class="btns" id="catBtns"></div>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <!-- 4. 매장 찾아보기 -->
+  <section>
+    <h2>4. 매장 하나하나 찾아보기</h2>
+    <p class="note">상호명이나 지역을 검색해 보세요. 표의 줄을 누르면 그 매장의 자세한 정보가 나옵니다.</p>
+    <div class="panel">
+      <div class="finder">
+        <input type="search" id="q" placeholder="상호명 · 지역 검색  (예: 왕가, 강남구)">
+        <select id="fItem"><option value="">전체 메뉴</option></select>
+        <select id="fStat">
+          <option value="">영업 상태 전체</option>
+          <option value="open">영업 중</option>
+          <option value="closed">폐업</option>
+        </select>
+        <span class="count" id="fCount"></span>
+      </div>
+      <div class="table-box">
+        <table class="tbl">
+          <thead><tr>
+            <th>상호명</th><th>메뉴</th><th>지역</th>
+            <th class="num">개업</th><th class="num">폐업</th><th class="num">버틴 기간</th>
+          </tr></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <p class="more" id="fMore"></p>
+      <div class="detail" id="detail" hidden></div>
+    </div>
+  </section>
+
+  <!-- 5. 결론 -->
+  <section>
+    <h2>5. 그래서 모찌는?</h2>
+    <div class="conclusion" id="conclusion"></div>
+
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-bottom:4px">모찌가 이 길을 간다면?</h3>
+      <p class="note">버튼을 누르면 그 메뉴의 곡선을 모찌의 확산 속도에 맞춰 그려봅니다.
+        예측이 아니라 <b>"같은 패턴을 따른다면"</b> 이라는 가정입니다.</p>
+      <div class="btns" id="scBtns"></div>
+      <div class="chart-box" style="height:300px"><canvas id="scChart"></canvas></div>
+      <div class="readout" id="scOut"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>데이터</b> 행정안전부 식품 인허가 데이터(공공데이터포털) · 네이버 데이터랩 검색어트렌드 · 통계청 KOSIS 1인가구</p>
+    <p><b>분석 범위</b> 수도권(서울·경기·인천), 2016-01 ~ 2026-10 · 분석 대상 매장 <span id="totalStores"></span>곳</p>
+    <p class="small">상호명에 키워드가 포함된 휴게·일반음식점을 카피캣 매장으로 보았고, 팝업(30일 미만)과 유행 시작 이전 개업 매장은 제외했습니다.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
