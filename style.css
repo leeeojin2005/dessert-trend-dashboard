@@ -95,15 +95,15 @@ select:focus{outline:none;border-color:var(--c)}
 .btns button.on{background:var(--c);border-color:var(--c);color:#fff}
 
 /* ===== 갤러리 ===== */
-.gallery{display:grid;gap:18px}
+.gallery{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(430px,1fr))}
 .g-card{background:var(--card);border:1px solid var(--line);border-radius:16px;
-  padding:20px;display:grid;grid-template-columns:1.35fr 1fr;gap:22px;align-items:start}
+  padding:18px;display:flex;flex-direction:column;gap:13px}
 .g-card img{width:100%;border-radius:10px;display:block;background:#f6f3f0}
 .g-card .tag{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 9px;
   border-radius:999px;background:#f3ece6;color:#8a7c72;margin-bottom:7px}
 .g-card h3{font-size:1.05rem;margin-bottom:8px}
 .g-card p{margin:0;font-size:.9rem;color:#5e544d}
-.g-card .miss{height:200px;display:flex;align-items:center;justify-content:center;
+.g-card .miss{height:190px;display:flex;align-items:center;justify-content:center;
   background:repeating-linear-gradient(45deg,#f7f4f1,#f7f4f1 10px,#f1ece8 10px,#f1ece8 20px);
   border-radius:10px;color:#a79c93;font-size:.85rem;text-align:center;padding:10px}
 
@@ -123,7 +123,7 @@ select:focus{outline:none;border-color:var(--c)}
 
 @media (max-width:760px){
   .hero h1{font-size:1.55rem}
-  .g-card{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
   .chart-box{height:260px}
 }
 

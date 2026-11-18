@@ -32876,7 +32876,7 @@
   },
   {
    "id": 4,
-   "cat": "검색량",
+   "cat": "매장",
    "title": "검색량 vs 매장 수 시차",
    "img": "images/g04_lag_tanghulu.png",
    "per_item": true,

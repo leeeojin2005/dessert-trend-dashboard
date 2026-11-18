@@ -111,7 +111,7 @@ out = {
          "img": "images/g03_stores.png", "per_item": True,
          "img_item": "images/g03_stores_{key}.png",
          "desc": "수도권에서 그 달에 영업 중이던 카피캣 매장 수다. 탕후루는 741곳까지 늘었다가 64곳으로 줄었고, 마라탕은 1,608곳까지 오른 뒤 완만히 감소 중이다. 요아정은 294곳에서 거의 그대로 유지되고 있다."},
-        {"id": 4, "cat": "검색량", "title": "검색량 vs 매장 수 시차",
+        {"id": 4, "cat": "매장", "title": "검색량 vs 매장 수 시차",
          "img": "images/g04_lag_tanghulu.png", "per_item": True,
          "img_item": "images/g04_lag_{key}.png",
          "desc": "검색 관심이 정점을 찍은 뒤 실제 매장 수가 정점에 도달하기까지의 시차를 보여준다. 탕후루는 3개월, 요아정은 23개월, 마라탕은 58개월로 메뉴마다 크게 달랐다. 반짝 유행일수록 시차가 짧다."},
