@@ -16,18 +16,33 @@ h2{font-size:1.45rem;margin-bottom:6px}
 .small{font-size:.82rem;color:var(--mute)}
 
 /* ===== 헤더 ===== */
-.hero{background:linear-gradient(160deg,#fff4ec 0%,#ffeadf 55%,#fde4ea 100%);
-  padding:56px 0 40px;border-bottom:1px solid var(--line)}
+.hero{position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#fff6ef 0%,#ffeadf 52%,#fde3e9 100%);
+  padding:60px 0 44px;border-bottom:1px solid var(--line)}
+/* 배경 디저트 라인 드로잉 */
+.hero-art{position:absolute;top:0;right:0;width:380px;height:290px;pointer-events:none}
+@media (max-width:1040px){.hero-art{width:300px;height:230px}.hero-art .art{opacity:.3}}
+@media (max-width:720px){.hero-art{display:none}}
+.hero-art .art{opacity:.42}
+.hero .wrap{position:relative;z-index:1}
 .eyebrow{margin:0 0 10px;font-size:.82rem;letter-spacing:.14em;color:#b06a4a;font-weight:700}
-.hero h1{font-size:2.1rem}
-.lead{margin:14px 0 0;color:#6b5f57;font-size:1.02rem}
+.hero h1{font-size:2.15rem;letter-spacing:-.035em}
+.lead{margin:15px 0 0;color:#6b5f57;font-size:1.03rem}
 .lead b{color:var(--accent)}
 
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:28px}
-.kpi{background:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.9);
-  border-radius:14px;padding:14px 16px;backdrop-filter:blur(4px)}
-.kpi .n{font-size:1.65rem;font-weight:800;letter-spacing:-.03em;line-height:1.2}
-.kpi .t{font-size:.82rem;color:#7d6f66;margin-top:2px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(176px,1fr));gap:12px;margin-top:30px}
+.kpi{position:relative;background:rgba(255,255,255,.62);
+  border:1px solid rgba(255,255,255,.85);border-radius:16px;padding:16px 18px 15px;
+  backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(180,120,90,.08);
+  transition:transform .18s, box-shadow .18s}
+.kpi:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(180,120,90,.14)}
+.kpi::before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;
+  border-radius:16px 16px 0 0;
+  background:linear-gradient(90deg,var(--accent) 0%,rgba(228,87,46,.25) 55%,transparent 100%);
+  opacity:.8}
+.kpi .n{font-size:1.72rem;font-weight:800;letter-spacing:-.035em;line-height:1.15;
+  font-variant-numeric:tabular-nums}
+.kpi .t{font-size:.8rem;color:#7d6f66;margin-top:4px;line-height:1.45}
 
 /* ===== 아이템 카드 ===== */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}

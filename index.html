@@ -9,6 +9,70 @@
 <body>
 
 <header class="hero">
+  <!-- 배경 장식: 디저트 일러스트 (직접 그린 SVG) -->
+  <svg class="hero-art" viewBox="0 0 380 290" aria-hidden="true">
+    <defs>
+      <!-- 탕후루 -->
+      <symbol id="d-tang" viewBox="0 0 100 100">
+        <path d="M50 64 V99" stroke="#c89a6b" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <circle cx="50" cy="52" r="17" fill="#f2866a"/>
+        <circle cx="50" cy="28" r="15" fill="#f69d80"/>
+        <circle cx="50" cy="9"  r="12" fill="#f9b89c"/>
+        <ellipse cx="44" cy="46" rx="4" ry="3" fill="#fff" opacity=".55"/>
+        <ellipse cx="45" cy="23" rx="3.5" ry="2.6" fill="#fff" opacity=".5"/>
+      </symbol>
+
+      <!-- 소프트 아이스크림 -->
+      <symbol id="d-soft" viewBox="0 0 100 100">
+        <path d="M30 56 L50 99 L70 56 Z" fill="#e9c08f"/>
+        <path d="M34 62 L60 68 M38 74 L57 78" stroke="#d6a470" stroke-width="2" fill="none"/>
+        <path d="M28 58 q22 -21 44 0 Z" fill="#fff6ee" stroke="#ecd3c0" stroke-width="2"/>
+        <path d="M33 45 q17 -18 34 0 Z" fill="#ffdfea" stroke="#f0c3d2" stroke-width="2"/>
+        <path d="M38 31 q12 -14 24 0 Z" fill="#fff6ee" stroke="#ecd3c0" stroke-width="2"/>
+        <circle cx="50" cy="20" r="7" fill="#e4572e"/>
+        <path d="M50 13 q4 -8 9 -9" stroke="#8aa86a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </symbol>
+
+      <!-- 모찌 (얼굴) -->
+      <symbol id="d-mochi" viewBox="0 0 100 100">
+        <path d="M14 62 q0 -32 36 -32 t36 32 q0 18 -36 18 t-36 -18 Z" fill="#fdf4ee" stroke="#ecd6c6" stroke-width="2"/>
+        <circle cx="38" cy="56" r="3" fill="#8a7366"/>
+        <circle cx="62" cy="56" r="3" fill="#8a7366"/>
+        <path d="M46 64 q4 4 8 0" stroke="#8a7366" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="28" cy="62" rx="5" ry="3.5" fill="#f8bfc9" opacity=".8"/>
+        <ellipse cx="72" cy="62" rx="5" ry="3.5" fill="#f8bfc9" opacity=".8"/>
+      </symbol>
+
+      <!-- 마라탕 그릇 -->
+      <symbol id="d-bowl" viewBox="0 0 100 100">
+        <path d="M18 60 q10 -6 32 -6 t32 6 q-4 32 -32 32 t-32 -32 Z" fill="#ffffff" stroke="#e8d5c4" stroke-width="2"/>
+        <ellipse cx="50" cy="60" rx="32" ry="7" fill="#e8614a"/>
+        <circle cx="40" cy="59" r="3" fill="#f6a58f"/>
+        <circle cx="58" cy="61" r="2.5" fill="#f6a58f"/>
+        <path d="M38 44 q7 -8 0 -15 q-7 -8 0 -15" stroke="#e0b9a6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <path d="M56 46 q7 -8 0 -15 q-7 -8 0 -15" stroke="#e0b9a6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </symbol>
+
+      <!-- 스프링클 -->
+      <symbol id="d-spr" viewBox="0 0 100 100">
+        <rect x="10" y="20" width="26" height="8" rx="4" fill="#f2866a" transform="rotate(-20 23 24)"/>
+        <rect x="48" y="12" width="24" height="8" rx="4" fill="#8aa86a" transform="rotate(25 60 16)"/>
+        <rect x="30" y="58" width="24" height="8" rx="4" fill="#f8bfc9" transform="rotate(10 42 62)"/>
+        <rect x="62" y="52" width="22" height="8" rx="4" fill="#efb95e" transform="rotate(-35 73 56)"/>
+      </symbol>
+    </defs>
+
+    <g class="art">
+      <use href="#d-tang"  x="20"  y="-6"  width="110" height="172" transform="rotate(-8 75 80)"/>
+      <use href="#d-mochi" x="150" y="26"  width="124" height="124" transform="rotate(5 212 88)"/>
+      <use href="#d-soft"  x="264" y="18"  width="116" height="174" transform="rotate(8 322 105)"/>
+      <use href="#d-bowl"  x="88"  y="136" width="132" height="132" transform="rotate(4 154 202)"/>
+      <use href="#d-mochi" x="254" y="162" width="96"  height="96"  transform="rotate(-9 302 210)"/>
+      <use href="#d-spr"   x="4"   y="150" width="72"  height="72"/>
+      <use href="#d-spr"   x="220" y="4"   width="56"  height="56"  transform="rotate(18 248 32)"/>
+    </g>
+  </svg>
+
   <div class="wrap">
     <p class="eyebrow">데이터 시각화 프로젝트 · 수도권 2016–2026</p>
     <h1>SNS 유행 디저트 카피캣 매장의<br>상권 전이 및 생존 주기 분석</h1>
